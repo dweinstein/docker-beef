@@ -103,7 +103,7 @@ beef:
         db_port: 5432
         db_name: "beef"
         db_user: "beef"
-        db_passwd: "beef123"
+        db_passwd: "beef"
         db_encoding: "UTF-8"
 
     # Credentials to authenticate in BeEF.
@@ -146,7 +146,7 @@ beef:
             enable: true
         console:
              shell:
-                enable: false
+                enable: true
         ipec:
             enable: true
         # this is still experimental, we're working on it..
