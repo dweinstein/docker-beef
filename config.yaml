@@ -8,9 +8,9 @@
 beef:
     version: '0.4.5.1-alpha'
     # More verbose messages (server-side)
-    debug: false
+    debug: true
     # More verbose messages (client-side)
-    client_debug: false
+    client_debug: true
     # Used for generating secure tokens
     crypto_default_value_length: 80
 
