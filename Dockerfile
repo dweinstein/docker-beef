@@ -7,6 +7,8 @@ RUN git clone git://github.com/beefproject/beef.git /root/beef && \
 	gem install bundler && \
 	bundle install
 ADD config.yaml /root/beef/
+ENV SHELL /bin/bash
+ENV HOME /root/beef
 WORKDIR /root/beef
 EXPOSE 443 2000 6789
 CMD ["/root/beef/beef", "-xvi"]
