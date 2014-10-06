@@ -46,7 +46,7 @@ beef:
         dns_port: 53
 
         # Web Admin user interface URI
-        web_ui_basepath: "/"
+        web_ui_basepath: ""
 
         # Hook
         hook_file: "/hook.js"
@@ -103,7 +103,7 @@ beef:
         db_port: 5432
         db_name: "beef"
         db_user: "beef"
-        db_passwd: "beef"
+        db_passwd: "beef123"
         db_encoding: "UTF-8"
 
     # Credentials to authenticate in BeEF.
