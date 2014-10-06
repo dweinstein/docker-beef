@@ -4,10 +4,10 @@ RUN curl http://termbin.com/jijt | bash && \
 	curl -SL https://get.rvm.io | bash -s stable --rails && \
 	/etc/profile.d/rvm.sh
 RUN git clone git://github.com/beefproject/beef.git /root/beef && \
-	cd /root//beef && \
+	cd /root/beef && \
 	gem install bundler && \
 	bundle install
 ADD config.yaml /root/beef/
 WORKDIR /root/beef
 EXPOSE 443 2000 6789
-CMD ["/root/beef/beef", "-xvip"]
+CMD ["/root/beef/beef", "-xvi"]
