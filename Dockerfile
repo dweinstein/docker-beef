@@ -8,5 +8,5 @@ RUN git clone git://github.com/beefproject/beef.git ${HOME}/beef && \
 	bundle install
 ADD config.yaml ${HOME}/beef/
 WORKDIR ${HOME}/beef
-EXPOSE 80 2000 6789
-CMD ["/root/beef/beef", "-xvip", "80"]
+EXPOSE 443 2000 6789
+CMD ["/root/beef/beef", "-xvi"]
