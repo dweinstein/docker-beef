@@ -1,8 +1,6 @@
 Browser Exploitation Framework
 ======================
 
-Arch Linux ownCloud Stable
-
 WebUI at https://127.0.0.1/panel
 
 Login - beef/beef
