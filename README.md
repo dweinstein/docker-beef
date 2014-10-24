@@ -7,15 +7,15 @@ Login - beef/beef
 
 From Docker Index
 ```
-docker pull usertaken/beef
+docker pull dweinstein/beef
 ```
 
 Build Yourself
 ```
-docker build --rm -t usertaken/beef github.com/UserTaken/docker-beef
+docker build -t dweinstein/beef .
 ```
 
 Run
 ```
-docker run -it -p 443:443 -p 2000:2000 -p 6789:6789 usertaken/beef
+docker run --rm -i -t -p 3000:3000 -p 6789:6789 dweinstein/beef
 ```
