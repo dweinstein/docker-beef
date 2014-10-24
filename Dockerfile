@@ -5,12 +5,11 @@ RUN apt-get update ; apt-get upgrade -y ; apt-get install -y build-essential ope
 RUN curl https://bitbucket.org/mpapis/rvm/raw/master/binscripts/rvm-installer | bash && \ 
 	/etc/profile.d/rvm.sh
 RUN git clone git://github.com/beefproject/beef.git /root/beef && \
-	cd /root/beef && \
+	cd /root/beef &&  \
 	gem install bundler && \
 	bundle install
-ADD config.yaml /root/beef/
 ENV SHELL /bin/bash
 ENV HOME /root/beef
 WORKDIR /root/beef
-EXPOSE 443 2000 6789
+EXPOSE 3000 6789
 CMD ["/bin/bash"]
